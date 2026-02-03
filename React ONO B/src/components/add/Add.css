@@ -1,0 +1,40 @@
+.add-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.add-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-medium);
+    outline: none;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.add-container input:focus {
+    border-bottom-color: var(--text-primary);
+}
+
+.add-container input::placeholder {
+    color: #ccc;
+}
+
+.add-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--text-primary);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}

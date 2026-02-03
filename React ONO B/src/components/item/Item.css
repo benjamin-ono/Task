@@ -1,0 +1,78 @@
+.mission-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-light);
+    gap: 1rem;
+}
+
+.mission-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.checkbox.checked {
+    background: var(--text-primary);
+    color: white;
+}
+
+.mission-text {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    word-break: break-word;
+}
+
+.finished .mission-text {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+}
+
+.edit-input {
+    width: 100%;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid var(--text-primary);
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+
+.mission-actions {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.action-btn {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 4px 8px;
+}
+
+.action-btn.delete {
+    color: #999;
+}
+
+.action-btn.delete:hover {
+    color: #000;
+}

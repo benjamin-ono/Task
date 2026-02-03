@@ -1,0 +1,15 @@
+.bonus-btn {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #999;
+    font-weight: 500;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.bonus-btn:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+}
